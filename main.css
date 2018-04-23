@@ -1,0 +1,77 @@
+div {
+    height: 200px;
+    max-width: 500px;
+    background-color: grey;
+    border: 1px solid lightblue;
+    margin: 5px auto;
+}
+
+header, main, footer {
+    margin: 5px auto;
+    background-color: lightgrey;
+}
+
+header, footer {
+    height: 150px;    
+    display: flex;
+    flex-direction: row;
+}
+
+button { 
+  height: auto;
+  width: 100%;
+  background-color: rgb(50, 61, 211);
+  color: white;
+  text-align: center;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.logo{
+    margin: auto auto;
+    height: 100px;
+    width: 100px;
+}
+
+.counter{
+    margin: auto auto;
+    height: 100px;
+    width: 100px;
+}
+
+.correct-counter{
+    margin: auto auto;
+    height: 100px;
+    width: 100px;
+}
+
+.question{
+    text-align: center;
+    
+}
+
+.answers{
+    text-align: center;
+    
+}
+
+.feedback{
+    text-align: center;
+    
+}
+
+.buttons{
+        
+}
+
+.progress-bar{
+    margin: auto auto;
+    height: 100px;
+    width: 100px;
+}
+
+.reset-button{
+    margin: auto auto;
+    height: 100px;
+    width: 100px;
+}
