@@ -1,1 +1,3 @@
-console.log('js file linked!')
+import quiz from 'questions.js';
+
+let count = 0;
