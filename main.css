@@ -6,15 +6,9 @@ div {
     margin: 5px auto;
 }
 
-div.feedback {
+div.feedback, div.results {
     height: 400px;
     max-width: 800px;
-    text-align: center;
-    /* display: none;     */
-}
-
-div.credits {
-    height: 20px;
     text-align: center;
 }
 
@@ -28,10 +22,16 @@ img {
 header, main, footer {
     margin: 5px auto;
     background-color: lightgrey;
+    height: auto;    
+    
+}
+
+main {
+    min-height: 500px;    
+    
 }
 
 header, footer {
-    height: 150px;    
     display: flex;
     flex-direction: row;
 }
@@ -70,7 +70,7 @@ form {
 
 #reset { 
   height: auto;
-  width: 75%;
+  width: 35%;
   background-color: rgb(211, 82, 50);
   color: white;
   text-align: center;
@@ -85,43 +85,24 @@ form {
     cursor: default;
 }
 
-.logo{
+.logo, .counter, .correct-counter{
     margin: auto auto;
     height: 100px;
     width: 100px;
 }
 
-.counter{
-    margin: auto auto;
-    height: 100px;
-    width: 100px;
-}
-
-.correct-counter{
-    margin: auto auto;
-    height: 100px;
-    width: 100px;
-}
-
-.question{
+.question, .answers, .start-page{
     text-align: center;
     
 }
 
-.answers{
+.progress-bar, .credits {
+    max-width: 200px;
+    max-height: 50px;
+    margin: auto auto;
     text-align: center;
 }
 
-.progress-bar{
-    margin: auto auto;
-    height: 100px;
-    width: 100px;
+.hide{
+    display: none;
 }
-
-.reset-button{
-    margin: auto auto;
-    height: 100px;
-    width: 100px;
-}
-
-
