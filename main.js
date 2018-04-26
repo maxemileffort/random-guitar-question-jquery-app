@@ -19,13 +19,21 @@ $('#check').on('click', (event)=>{
     //should check answerchoice vs correct answer and then display feedback
     //should also add to correct counter if appropriate
     checkAnswer();
+    $('.feedback').removeClass('hide');
+    $('#check').prop('disabled', true);
+    $('.answers').addClass('hide');
+    $('.question').addClass('hide');
     
 });
 
 $('#close').on('click', (event) => {
     event.preventDefault();
     //should hide feedback and enable next button
-
+    $('.feedback').addClass('hide');
+    $('#next').removeAttr('disabled');
+    $('.answers').removeClass('hide');
+    $('.question').removeClass('hide');
+    
 });
 
 $('#next').on('click', (event) => {
@@ -34,12 +42,27 @@ $('#next').on('click', (event) => {
     //should re-render question box with next question and disable itself
     //should also reflect progress in progress bar at bottom and counter
     //at top
+    if (count > 2) {
+        $('.answers').addClass('hide');
+        $('.question').addClass('hide');
+        $('.results').removeClass('hide');
+    } else {
+        renderNextQuestion();
+        $('#next').prop('disabled', true);
+        $('#check').removeAttr('disabled');
+    }
+    
 });
 
 $('#reset').on('click', (event) => {
     event.preventDefault();
     count = 0;
     //should take us back to start page
+    hideEverything();
+    landOnPage();
+    $('#check').removeAttr('disabled');
+    $('#next').prop('disabled', true);
+
 });
 
 function hideEverything(){

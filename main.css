@@ -79,7 +79,7 @@ form {
   margin: 10px auto;
 }
 
-#next:disabled{
+#next:disabled, #check:disabled{
     background-color: rgba(0,0,0,0.4);
     color: darkgray;
     cursor: default;
