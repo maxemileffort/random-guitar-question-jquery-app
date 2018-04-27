@@ -7,6 +7,7 @@
     <link rel="icon" href="assets/guitar-black.png">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -15,10 +16,10 @@
             <p>The 6-String Quiz</p>
         </div>
         <div class="counter">
-            <span id=''>question #</span> out of <span id=''>total</span>
+            <span id='counter'>question #</span> out of <span id='total'>total</span>
         </div>
         <div class="correct-counter">
-            correct: <span id=''>number correct</span> / <span id=''>total asked</span>
+            correct: <span id='num-correct'>number correct</span> / <span id='total-asked'>total asked</span>
         </div>
     </header>
         
@@ -26,15 +27,30 @@
         <div class="start-page">
             Welcome to the 6-String quiz, where you can test your knowledge about
             the axe, the twanger, or what is known more colloquially as the Guitar! Let's get started! 
-            <button id='start'>Start!</button>
+            <p><button id='start'>Start!</button></p>
         </div>
-        <div class="question">Question asked</div>
+        <div class="question"></div>
         <div class="answers">
-            <form action="submit">Answer choices
-                <input type="radio" name="answer">
-                <input type="radio" name="answer">
-                <input type="radio" name="answer">
-                <input type="radio" name="answer">
+            <form>
+                <label id='answer1' class="container">One
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                </label>
+                
+                <label id='answer2' class="container">Two
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                
+                <label id='answer3' class="container">Three
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+                
+                <label id='answer4' class="container">Four
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
                 <button id="check">Check</button>
                 <button id="next" disabled>Next</button>
             </form>
@@ -49,8 +65,8 @@
         </div>
         <div class="results">
             <p>results page</p>
-            <img id='correct-pic' src="assets/rock-and-roll.png" alt="Did awesome">
-            <img id='incorrect-pic' src="assets/dislike.png" alt="Didn't do so great">
+            <img id='did-awesome-pic' src="assets/rock-and-roll.png" alt="Did awesome">
+            <img id='not-awesome-pic' src="assets/dislike.png" alt="Didn't do so great">
             <button id="reset">Start Over</button>
         </div>
     </main>

@@ -1,6 +1,5 @@
 const quiz = [
     {
-        id: 1,
         question: "I wanna rock and roll all night...",
         answerChoices: [
             "... and sleep til noon!",
@@ -13,7 +12,6 @@ const quiz = [
     },
 
     {
-        id: 2,
         question: 'How many strings total does a guitar usually have?',
         answerChoices: [
             "4",
@@ -26,7 +24,6 @@ const quiz = [
     },
 
     {
-        id: 3,
         question: "What was Jimi Hendrix's favorite guitar?",
         answerChoices: [
             "Gibson Les Paul",
@@ -39,7 +36,6 @@ const quiz = [
     },
 
     {
-        id: 4,
         question: 'A guitar that usually hits the lower tones and most of the time only has 4 strings is called a...',
         answerChoices: [
             "broken guitar.",
@@ -52,7 +48,6 @@ const quiz = [
     },
 
     {
-        id: 5,
         question: 'Time to turn it to 11! When was the guitar invented?',
         answerChoices: [
             "1776",
@@ -65,7 +60,6 @@ const quiz = [
     },
 
     {
-        id: 6,
         question: 'Who is the lead guitarist for Led Zeppelin?',
         answerChoices: [
             "Jimmy Page",
@@ -78,7 +72,6 @@ const quiz = [
     },
 
     {
-        id: 7,
         question: 'What is the standard tuning for a 6 string guitar?',
         answerChoices: [
             "B-B-B-B-B-B",
@@ -91,12 +84,11 @@ const quiz = [
     },
 
     {
-        id: 8,
         question: 'If you can hear the bass player...',
         answerChoices: [
-            "... and sleep til noon!",
-            "... just kidding, I don't rock or roll.",
-            "... and party every day!",
+            "... then turn it up!",
+            "... what!??",
+            "... bow chk a bow chk a bow bow!",
             "... then he's playing too loud!",
         ],
         correctAnswer: "... then he's playing too loud!",
@@ -104,7 +96,6 @@ const quiz = [
     },
 
     {
-        id: 9,
         question: "What part of the electric guitar picks up the noise from the strings and sends to to the amp?",
         answerChoices: [
             "The bridge",
@@ -117,7 +108,6 @@ const quiz = [
     },
 
     {
-        id: 10,
         question: 'What show were the random quotes from?',
         answerChoices: [
             "The Office",
