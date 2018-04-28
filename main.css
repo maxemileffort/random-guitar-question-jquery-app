@@ -39,7 +39,7 @@ header, main, footer {
 }
 
 main {
-    min-height: 500px;    
+    min-height: 450px;    
     padding-top: 5px;
 }
 
@@ -48,6 +48,11 @@ header {
     justify-content: center;
     height: auto;
     width: 100%;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
 }
 
 footer {
@@ -168,7 +173,7 @@ form label{
 .progress-bar, .credits {
     max-width: 400px;
     max-height: 150px;
-    margin: auto auto;
+    margin: 5px auto;
     text-align: center;
     color: white;
 }
@@ -176,7 +181,13 @@ form label{
 .progress-bar {
     display: flex;
     justify-content: space-around;
-    height: 75%%;
+    align-content: center;
+    height: 75%;
+}
+
+.box {
+    height: 20px;
+    width: 20px;
 }
 
 .hide{
