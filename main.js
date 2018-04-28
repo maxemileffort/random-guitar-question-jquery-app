@@ -95,6 +95,7 @@ function startQuiz() {
     $('.question').removeClass('hide');
     $('.answers').removeClass('hide');
     $('.credits').removeClass('hide');
+    $('.progress-bar').removeClass('hide');
     renderNextQuestion();
 };
 
