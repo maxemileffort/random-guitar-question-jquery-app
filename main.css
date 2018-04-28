@@ -42,9 +42,14 @@ main {
     padding-top: 5px;
 }
 
-header, footer {
+header{
     display: flex;
     flex-direction: row;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
 }
 
 button {
