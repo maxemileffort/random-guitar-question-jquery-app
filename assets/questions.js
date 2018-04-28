@@ -8,7 +8,7 @@ const quiz = [
             "... I can raise and lower my cholesterol at will.",
         ],
         correctAnswer: "... and party every day!",
-        feedback: "I hope you got this one right, because the next few won't be so easy!"
+        feedback: "Nice! But get ready, because the next few won't be so easy!"
     },
 
     {
@@ -89,9 +89,9 @@ const quiz = [
             "... then turn it up!",
             "... what!??",
             "... bow chk a bow chk a bow bow!",
-            "... then he's playing too loud!",
+            "... then he is too loud!",
         ],
-        correctAnswer: "... then he's playing too loud!",
+        correctAnswer: "... then he is too loud!",
         feedback: "You couldn't handle my undivided attention."
     },
 

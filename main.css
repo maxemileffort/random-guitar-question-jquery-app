@@ -1,5 +1,8 @@
 body{
     font-family: 'Roboto Slab', serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 div {
@@ -31,20 +34,25 @@ img {
 }
 
 header, main, footer {
-    margin: 0 auto;
     background-color: #1B3440;
     height: 175px;  
 }
 
 main {
     min-height: 500px;    
-    margin: 0 auto;
     padding-top: 5px;
 }
 
-header, footer {
+header {
     display: flex;
-    flex-direction: row;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
 }
 
 button {
@@ -112,24 +120,29 @@ form label{
 }
 
 .banner {
-    max-width: 500px;
     display: flex;
     flex-direction: row;
-    margin: 0 auto;
+    justify-content: space-around;
+    max-width: 525px;
+    width: 100%;
+    border: none;
+    background-color: none;
+    max-height: 190px;
+    height: 100%;
 }
 
 .logo{
     margin-top: auto;
     margin-bottom: auto;
     height: 150px;
-    width: 175px;
+    width: 150px;
     text-align: center;
 } 
 
 .counter, .correct-counter{
     margin: auto auto;
     height: 150px;
-    width: 175px;
+    width: 150px;
     text-align: center;
     color: white;
 }
@@ -160,8 +173,24 @@ form label{
     color: white;
 }
 
+.progress-bar {
+    display: flex;
+    justify-content: space-around;
+    height: 75%%;
+}
+
 .hide{
     display: none;
+}
+
+.red {
+    background-color: red;
+}
+.green {
+    background-color: green;
+}
+.black {
+    background-color: black;
 }
 
 
