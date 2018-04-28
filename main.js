@@ -33,7 +33,6 @@ $('#close').on('click', (event) => {
     //should hide feedback and enable next button
     closeFeedback();
     feedbackIndex++;
-    
 });
 
 $('#next').on('click', (event) => {
@@ -73,7 +72,6 @@ $('#reset').on('click', (event) => {
     landOnPage();
     $('#check').removeAttr('disabled');
     $('#next').prop('disabled', true);
-
 });
 
 function hideEverything(){
@@ -87,7 +85,6 @@ function landOnPage() {
     $('.logo').removeClass('hide');
     $('.start-page').removeClass('hide');
     $('.credits').removeClass('hide');
-
 };
 
 function startQuiz() {
@@ -99,7 +96,6 @@ function startQuiz() {
     $('.answers').removeClass('hide');
     $('.credits').removeClass('hide');
     renderNextQuestion();
-
 };
 
 function checkAnswer(){
@@ -119,7 +115,6 @@ function checkAnswer(){
 };
 
 function showFeedback(){
-    
     $('.feedback').removeClass('hide');
     $('#check').prop('disabled', true);
     $('.answers').addClass('hide');
@@ -153,7 +148,6 @@ function renderNextQuestion(){
     document.querySelector('#answer4').innerHTML = quiz[count].answerChoices[3] + "<input value='"+quiz[count].answerChoices[3]+"' name='answer' type='radio'><span class='checkmark'></span>";
     document.querySelector('#counter').innerHTML = count+1;
     document.querySelector('#total').innerHTML = quiz.length;
-    document.querySelector('#total-asked').innerHTML = count+1;
     document.querySelector('#num-correct').innerHTML = numCorrect;
 };
 

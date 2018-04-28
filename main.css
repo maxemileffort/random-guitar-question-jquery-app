@@ -3,36 +3,43 @@ body{
 }
 
 div {
-    max-height: 200px;
+    max-height: 180px;
     max-width: 500px;
-    background-color: grey;
-    border: 1px solid tan;
-    margin: 5px auto;
+    background-color: #5070B5;
+    border: 1px solid #FF9E00;
+    border-radius: 10px;
+    margin: 0 auto;
+    padding: 5px;
 }
 
 div.feedback, div.results {
-    height: 400px;
+    max-height: 800px;
     max-width: 800px;
     text-align: center;
+    
+}
+
+p, label, text {
+    color: #FFFFFF;
 }
 
 img {
     max-height: 200px;
     max-width: 200px;
-    height: auto;
-    width: 75%
+    height: 75%;
+    width: 75%;
 }
 
 header, main, footer {
-    margin: 5px auto;
-    background-color: lightgrey;
-    height: 150px;    
-    
+    margin: 0 auto;
+    background-color: #1B3440;
+    height: 175px;  
 }
 
 main {
     min-height: 500px;    
-    
+    margin: 0 auto;
+    padding-top: 5px;
 }
 
 header, footer {
@@ -50,15 +57,26 @@ form label{
     flex-direction: column;
     align-self: flex-start;
     margin: 10px auto;
-    border: 1px solid tan;
+    border: 1px solid #FF9E00;
+    border-radius: 5px;
 }
 
+#feedback, #results {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: auto;
+}
+
+#feedback > *, #results > * {
+    margin: 5px auto;
+}
 
 #check, #next, #start { 
   height: 50%;
   width: 50%;
-  background-color: rgb(50, 61, 211);
-  color: white;
+  background-color: #FF9E00;
+  color: #fff;
   text-align: center;
   font-size: 20px;
   cursor: pointer;
@@ -66,23 +84,23 @@ form label{
 }
 
 #close {
-  height: 10%;
-  width: 10%;
-  background-color: rgb(50, 61, 211);
+  height: 50%;
+  width: 50%;
+  background-color: #FF9E00;
   color: white;
   text-align: center;
-  font-size: 20px;
+  font-size: 22px;
   cursor: pointer;
-  margin: 10px 10px;
+  margin: 10px auto;
 }
 
 #reset { 
-  height: auto;
-  width: 35%;
-  background-color: rgb(211, 82, 50);
+  height: 50%;
+  width: 50%;
+  background-color: #FF9E00;
   color: white;
   text-align: center;
-  font-size: 25px;
+  font-size: 22px;
   cursor: pointer;
   margin: 10px auto;
 }
@@ -93,24 +111,45 @@ form label{
     cursor: default;
 }
 
+.banner {
+    max-width: 500px;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+}
+
 .logo{
     margin-top: auto;
     margin-bottom: auto;
-    height: 145px;
-    width: 145px;
+    height: 150px;
+    width: 175px;
+    text-align: center;
 } 
 
 .counter, .correct-counter{
     margin: auto auto;
-    height: 145px;
-    width: 145px;
+    height: 150px;
+    width: 175px;
+    text-align: center;
+    color: white;
+}
+
+.counter>p, .correct-counter>p{
+    margin: auto;
 }
 
 .question, .answers, .start-page{
     text-align: center;
     max-height: 500px;
     max-width: 500px;
-    
+    font-size: 22px;
+    margin-top: 15px;
+    color: white;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
 }
 
 .progress-bar, .credits {
@@ -118,6 +157,7 @@ form label{
     max-height: 150px;
     margin: auto auto;
     text-align: center;
+    color: white;
 }
 
 .hide{
@@ -164,7 +204,7 @@ form label{
 
 /* When the radio button is checked, add a blue background */
 .container input:checked ~ .checkmark {
-  background-color: tan;
+  background-color: #FF9E00;
 }
 
 /* Create the indicator (the dot/circle - hidden when not checked) */

@@ -10,17 +10,23 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img src="assets/guitar.png" alt='small guitar picture'>
-            <p>The 6-String Quiz</p>
-        </div>
-        <div class="counter">
-            <span id='counter'>question #</span> out of <span id='total'>total</span>
-        </div>
-        <div class="correct-counter">
-            correct: <span id='num-correct'>number correct</span> / <span id='total-asked'>total asked</span>
-        </div>
+    <header role="banner">
+        <section class='banner'>
+            <div class="logo">
+                <img src="assets/guitar.png" alt='small guitar picture'>
+                <p>The 6-String Quiz</p>
+            </div>
+            <div class="counter">
+                Progress:
+                <span id='counter'>question #</span> out of
+                <span id='total'>total</span>
+            </div>
+            <div class="correct-counter">
+                Score:
+                <span id='num-correct'>number correct</span>
+            </div>
+        </section>
+        
     </header>
         
     <main>
@@ -51,23 +57,29 @@
                     <input type="checkbox">
                     <span class="checkmark"></span>
                 </label>
-                <button id="check">Check</button>
-                <button id="next" disabled>Next</button>
+                <section class="buttons">
+                    <button id="check">Check</button>
+                    <button id="next" disabled>Next</button>
+                </section>
             </form>
         </div>
         <div class="feedback">
-            <p id='rendered-feedback'>
-                Feeback goes here, modal like FCC
-            </p>
-            <img id='correct-pic' src="assets/tick-inside-circle.png" alt="Got it right">
-            <img id='incorrect-pic' src="assets/delete.png" alt="Got it wrong">
-            <button id="close">Close</button>
+            <section id="feedback">
+                <p id='rendered-feedback'>
+                    Feeback goes here, modal like FCC
+                </p>
+                <img id='correct-pic' src="assets/tick-inside-circle.png" alt="Got it right">
+                <img id='incorrect-pic' src="assets/delete.png" alt="Got it wrong">
+                <button id="close">Close</button>
+            </section>
         </div>
         <div class="results">
-            <p>results page</p>
-            <img id='did-awesome-pic' src="assets/rock-and-roll.png" alt="Did awesome">
-            <img id='not-awesome-pic' src="assets/dislike.png" alt="Didn't do so great">
-            <button id="reset">Start Over</button>
+            <section id="results">
+                <p>results page</p>
+                <img id='did-awesome-pic' src="assets/rock-and-roll.png" alt="Did awesome">
+                <img id='not-awesome-pic' src="assets/dislike.png" alt="Didn't do so great">
+                <button id="reset">Start Over</button>
+            </section>
         </div>
     </main>
 
