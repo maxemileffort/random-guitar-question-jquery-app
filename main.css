@@ -3,6 +3,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    background-color: #1B3440;
 }
 
 div {
@@ -39,7 +40,7 @@ header, main, footer {
 }
 
 main {
-    min-height: 330px;    
+    min-height: 400px;    
     padding-top: 5px;
     height: auto;
 }
