@@ -2,7 +2,7 @@ body{
     font-family: 'Roboto Slab', serif;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 div {
@@ -39,8 +39,9 @@ header, main, footer {
 }
 
 main {
-    min-height: 450px;    
+    min-height: 330px;    
     padding-top: 5px;
+    height: auto;
 }
 
 header {
@@ -48,11 +49,6 @@ header {
     justify-content: center;
     height: auto;
     width: 100%;
-}
-
-footer {
-    display: flex;
-    flex-direction: column;
 }
 
 footer {
@@ -144,18 +140,6 @@ form label{
     text-align: center;
 } 
 
-.counter, .correct-counter{
-    margin: auto auto;
-    height: 150px;
-    width: 150px;
-    text-align: center;
-    color: white;
-}
-
-.counter>p, .correct-counter>p{
-    margin: auto;
-}
-
 .question, .answers, .start-page{
     text-align: center;
     max-height: 500px;
@@ -180,12 +164,11 @@ form label{
 
 .progress-bar {
     display: flex;
-    justify-content: space-around;
-    align-content: center;
-    height: 75%;
+    width: 90%;
 }
 
 .box {
+    margin:auto;
     height: 20px;
     width: 20px;
 }
@@ -196,10 +179,19 @@ form label{
 
 .red {
     background-color: red;
+    background-image: url('assets/delete.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .green {
     background-color: green;
+    background-image: url('assets/tick-inside-circle.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
+
 .black {
     background-color: black;
 }
