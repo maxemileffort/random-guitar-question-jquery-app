@@ -1,0 +1,271 @@
+body{
+    font-family: 'Roboto Slab', serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #1B3440;
+}
+
+fieldset {
+  border: none;
+}
+
+div {
+    max-height: 180px;
+    max-width: 500px;
+    background-color: #5070B5;
+    border: 1px solid #FF9E00;
+    border-radius: 10px;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+div.feedback, div.results {
+    max-height: 800px;
+    max-width: 800px;
+    text-align: center;
+    
+}
+
+p, label, text {
+    color: #FFFFFF;
+}
+
+img {
+    max-height: 200px;
+    max-width: 200px;
+    height: 75%;
+    width: 75%;
+}
+
+header, main, footer {
+    background-color: #1B3440;
+    height: 175px;  
+}
+
+main {
+    min-height: 400px;    
+    padding-top: 5px;
+    height: auto;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    border-radius: 18px;
+    box-shadow: black 3px 3px 3px;
+}
+
+form label{
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    margin: 10px auto;
+    border: 1px solid #FF9E00;
+    border-radius: 5px;
+}
+
+a {
+    color: black;
+}
+
+#feedback, #results {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: auto;
+}
+
+#feedback > *, #results > * {
+    margin: 5px auto;
+}
+
+#check, #next, #start { 
+  height: 50%;
+  width: 50%;
+  background-color: #FF9E00;
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  cursor: pointer;
+  margin: 10px 10px;
+}
+
+#close {
+  height: 50%;
+  width: 50%;
+  background-color: #FF9E00;
+  color: white;
+  text-align: center;
+  font-size: 22px;
+  cursor: pointer;
+  margin: 10px auto;
+}
+
+#reset { 
+  height: 50%;
+  width: 50%;
+  background-color: #FF9E00;
+  color: white;
+  text-align: center;
+  font-size: 22px;
+  cursor: pointer;
+  margin: 10px auto;
+}
+
+#next:disabled, #check:disabled{
+    background-color: rgba(0,0,0,0.4);
+    color: darkgray;
+    cursor: default;
+}
+
+.banner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    max-width: 525px;
+    width: 100%;
+    border: none;
+    background-color: none;
+    max-height: 190px;
+    height: 100%;
+}
+
+.logo{
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 150px;
+    width: 150px;
+    text-align: center;
+} 
+
+.question, .answers, .start-page{
+    text-align: center;
+    max-height: 500px;
+    max-width: 500px;
+    font-size: 22px;
+    margin-top: 15px;
+    color: white;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+}
+
+.progress-bar, .credits {
+    max-width: 400px;
+    max-height: 150px;
+    margin: 5px auto;
+    text-align: center;
+    color: white;
+}
+
+.progress-bar {
+    display: flex;
+    width: 90%;
+}
+
+.box {
+    margin:auto;
+    height: 20px;
+    width: 20px;
+}
+
+.hide{
+    display: none;
+}
+
+.red {
+    background-color: red;
+    background-image: url('assets/delete.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.green {
+    background-color: green;
+    background-image: url('assets/tick-inside-circle.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.black {
+    background-color: black;
+}
+
+
+/* Custom radio button CSS */
+/* Customize the label (the container) */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #FF9E00;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}

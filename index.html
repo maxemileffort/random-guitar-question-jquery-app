@@ -6,56 +6,60 @@
     <title>6-String Trivia</title>
     <link rel="icon" href="assets/guitar-black.png">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
 </head>
+
 <body>
-    <header role="banner" >
+    <header role="banner">
         <section class="banner">
             <div class="logo">
                 <img src="assets/guitar.png" alt='small guitar picture'>
                 <p>The 6-String Quiz</p>
             </div>
-            
-                
         </section>
-            
     </header>
-        
-    <main role="main">
+
+    <main>
         <div class="start-page">
-            Welcome to the 6-String quiz, where you can test your knowledge about
-            the axe, the twanger, or what is known more colloquially as the Guitar! Let's get started! 
-            <p><button id='start'>Start!</button></p>
+            Welcome to the 6-String quiz, where you can test your knowledge about the axe, the twanger, or what is known more colloquially
+            as the Guitar! Let's get started!
+            <p>
+                <button id='start'>Start!</button>
+            </p>
         </div>
-        <div class="question"></div>
-        <div class="answers">
-            <form>
-                <label id='answer1' class="container">One
-                    <input type="checkbox" checked="checked">
-                    <span class="checkmark"></span>
-                </label>
-                
-                <label id='answer2' class="container">Two
-                    <input type="checkbox">
-                    <span class="checkmark"></span>
-                </label>
-                
-                <label id='answer3' class="container">Three
-                    <input type="checkbox">
-                    <span class="checkmark"></span>
-                </label>
-                
-                <label id='answer4' class="container">Four
-                    <input type="checkbox">
-                    <span class="checkmark"></span>
-                </label>
-                <section class="buttons">
-                    <button id="check">Check</button>
-                    <button id="next" disabled>Next</button>
-                </section>
-            </form>
-        </div>
+        <legend>
+            <div class="question"></div>
+        </legend>
+        <fieldset>
+            <div class="answers">
+                <form>
+                    <label id='answer1' class="container">One
+                        <input type="checkbox" checked="checked">
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <label id='answer2' class="container">Two
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <label id='answer3' class="container">Three
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <label id='answer4' class="container">Four
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                    <section class="buttons">
+                        <button id="check">Check</button>
+                        <button id="next" disabled>Next</button>
+                    </section>
+                </form>
+            </div>
+        </fieldset>
         <div class="feedback">
             <section id="feedback">
                 <p id='rendered-feedback'>
@@ -76,7 +80,7 @@
         </div>
     </main>
 
-    <footer role="contentinfo">
+    <footer>
         <div class="progress-bar">
             <p>Progress: </p>
         </div>
@@ -89,9 +93,10 @@
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous">
-    </script>
+        </script>
     <script src="assets/questions.js"></script>
-    <script src="main.js"></script>
+    <script src="index.js"></script>
 
 </body>
+
 </html>
